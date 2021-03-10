@@ -1,4 +1,4 @@
-const cannedMessages = ['Hey', 'Yes', 'No', 'Cats'];
+const cannedMessages = require('./constants')
 
 // Keyboard inputs
 const handleUserInput = (key) => {
@@ -26,7 +26,6 @@ const handleUserInput = (key) => {
 
 // Stores the active TCP connection object
 let connection;
-
 // Setup interface - handles user input with stdin
 const setupInput = function(connection) {
   conn = connection;
