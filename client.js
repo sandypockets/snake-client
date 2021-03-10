@@ -13,8 +13,15 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    conn.write('Name: Zac');
-  })
+    conn.write("Name: Zac");
+  });
+
+/* conn.on('data', () => {
+    conn.write("Move: up");
+    conn.write("Move: down");
+    conn.write("Move: left");
+    conn.write("Move: right");
+  }); */
 
   // Unsure if this conn.on is the correct thing.
   conn.on('data', (data) => {
