@@ -12,7 +12,6 @@ const connect = function() {
     conn.write("Name: Zac");
   });
 
-  // Unsure if this section is correct
   conn.on('data', (data) => {
     console.log('Message from connection: ', data)
   });

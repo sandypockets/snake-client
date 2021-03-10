@@ -4,13 +4,21 @@ const handleUserInput = (key)=> {
     console.log('You exited the game.');
     process.exit();
   } else if (key === 'w') {
-      conn.write("Move: up");
+      setInterval(() => {
+        conn.write("Move: up");
+      }, 600);
     } else if (key === 'a') {
-      conn.write("Move: left");
+      setInterval(() => {
+        conn.write("Move: left");
+      }, 600);
     } else if (key === 's') {
-      conn.write("Move: down");
+      setInterval(() => {
+        conn.write("Move: down");
+      }, 600);
     } else if (key === 'd') {
-      conn.write("Move: right");
+      setInterval(() => {
+        conn.write("Move: right");
+      }, 600);
     }
   };
 
